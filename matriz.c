@@ -16,5 +16,4 @@ FILE *file;
         printf("Erro ao abrir o arquivo.\n");
         return 0;
     }
-
 }
