@@ -1,7 +1,4 @@
-// cabeçalhos e structs
-
-#include <stdio.h>
-#include <stdlib.h>
+#define MATRIZ
 
 typedef struct Celula{
 struct Celula *direita, *abaixo;
@@ -10,6 +7,10 @@ float valor;
 } Celula;
 
 typedef struct {
-Celula *cabeca;
+Celula **cabeca;
 int nlin, ncol;
 } Matriz;
+
+Celula *criaCelula(int linha, int coluna, float valor);
+Matriz leMatriz(FILE *arquivo);
+void imprimeMatriz(Matriz mat);
