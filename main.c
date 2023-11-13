@@ -18,5 +18,13 @@ int main()
 
     fclose(arquivo);
 
+    printf("\nSoma das Matrizes A e B:\n");
+    C = somaMatrizes(A, B);
+    imprimeMatriz(C);
+
+    printf("\nMultiplicação das Matrizes A e B:\n");
+    C = multiplicaMatrizes(A, B);
+    imprimeMatriz(C);
+
     return 0;
 }
